@@ -1,0 +1,35 @@
+<h1>Form Edit Product</h1>
+
+<form [formGroup]="userForm" (ngSubmit)="registerUser()">
+  <div>
+    <label for="email">Email</label>
+    <input type="text" id="email" formControlName="email">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="text" id="password" formControlName="password">
+  </div>
+  <div>
+    <label for="confirmPassword">Confirm Password</label>
+    <input type="text" id="confirmPassword" formControlName="confirmPassword">
+  </div>
+  <div>
+    <label for="country">Country</label>
+    <input type="text" id="country" formControlName="country">
+  </div>
+  <div>
+    <label for="age">Age</label>
+    <input type="text" id="age" formControlName="age">
+  </div>
+  <div>
+    <label for="gender">Gender</label>
+    <input type="text" id="gender" formControlName="gender">
+  </div>
+  <div>
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" formControlName="phone">
+  </div>
+  <div>
+    <button>Create</button>
+  </div>
+</form>
